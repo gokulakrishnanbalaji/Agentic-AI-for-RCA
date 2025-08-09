@@ -1,10 +1,29 @@
 [
   {
-    "pattern": "sales dip during festival season",
-    "checklist": "1. Check stock availability\n2. Verify competitor discounts\n3. Assess regional promotions"
+    "pattern": "High order cancellations in a specific region",
+    "checklist": [
+      "Check cancellation rate by region over the last 6 months",
+      "Identify top products with high cancellations",
+      "Check average delivery time in that region",
+      "Analyze discount patterns for cancelled orders"
+    ]
   },
   {
-    "pattern": "year-on-year growth < 3%",
-    "checklist": "1. Analyze inflation impact\n2. Review advertising spend\n3. Look at market saturation"
+    "pattern": "Decline in sales for a product category",
+    "checklist": [
+      "Check month-over-month sales for the category",
+      "Identify regions with largest sales drops",
+      "Check competitor sales trend if available",
+      "Analyze discount and promotion history for category"
+    ]
+  },
+  {
+    "pattern": "Increase in shipping delays",
+    "checklist": [
+      "Identify regions with delayed shipments",
+      "Check correlation between delay and ship mode",
+      "Check average delay duration",
+      "Analyze if certain products have higher delays"
+    ]
   }
 ]
