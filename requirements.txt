@@ -1,8 +1,17 @@
-# Minimal requirements.txt
-langgraph>=0.2.14
-langchain>=0.2.12
-langchain-google-genai>=1.0.8
-langfuse>=3.3.4
-pandas>=2.1.0
-charset-normalizer>=3.0.0
-dotenv>=0.20.0
+# Core orchestration + LLM integration
+langgraph
+langchain
+langchain-google-genai
+google-generativeai
+
+# Official Google Gen AI SDK (modern; used by integrations)
+google-genai
+
+# Data / utils
+pandas
+numpy
+python-dateutil
+pydantic
+tqdm
+matplotlib
+dotenv

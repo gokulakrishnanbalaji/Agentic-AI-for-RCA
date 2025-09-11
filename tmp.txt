@@ -1,0 +1,4 @@
+from IPython.display import Image, display
+
+# After creating your graph (app = workflow.compile())
+display(Image(create_root_cause_workflow().get_graph().draw_mermaid_png()))
