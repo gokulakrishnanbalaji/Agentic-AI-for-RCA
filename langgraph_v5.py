@@ -10,6 +10,7 @@ from langgraph.graph import StateGraph, END
 import google.generativeai as genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 load_dotenv()
 genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
@@ -72,7 +73,7 @@ class RootCauseAgent:
         return '\n'.join(info_lines)
 
     def execute_pandas_code(self, code: str, data_context: Dict[str, pd.DataFrame]) -> str:
-        exec_globals = {'pd': pd, 'np': np}
+        exec_globals = {'pd': pd, 'np': np, 'plt':plt, 'sns':sns}
         exec_globals.update(data_context)
         
         old_stdout = sys.stdout
@@ -368,4 +369,4 @@ def run_root_cause_analysis(question: str, max_iterations: int = 3):
 
 if __name__ == "__main__":
     question = "How is the revenue from 2011 Nov to 2012 Jan?"
-    run_root_cause_analysis(question, max_iterations=3)
+    print(run_root_cause_analysis(question, max_iterations=3))
