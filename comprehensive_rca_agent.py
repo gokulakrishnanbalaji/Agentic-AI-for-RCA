@@ -1327,7 +1327,7 @@ def main():
     """Main function to run the comprehensive RCA analysis"""
     
     # Set your Gemini API key
-    API_KEY = "AIzaSyA0AbJnQrxpDVtODqyfUyWmw2FPNXjS4WU"  # Replace with your actual API key
+    API_KEY = "your-gemini-api-key-here"  # Replace with your actual API key
     
     if API_KEY == "your-gemini-api-key-here":
         print("❌ Please set your Gemini API key in the API_KEY variable")
